@@ -1,7 +1,7 @@
 # ShopUI
-ShopUI is the first public, functioning ShopUI plugin, by QuiverlyRivalry, and @dapigguy (configuration)
+ShopUI is the first public, functioning ShopUI plugin, by BurritoMan46, and @dapigguy (configuration)
 
-This is my first UI, plugin, I hope you enjoy it!
+Enjoy :D
 
 ### Requirements
 This plugin requires EconomyAPI & FormsAPI.
