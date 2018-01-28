@@ -1,5 +1,5 @@
 # Server Name
-name: CastleRaid
+name: §bAversionShop
 
 # Messages
 # Tags: {amount}, {item}, {cost}, {missing}
@@ -62,8 +62,8 @@ items:
     - "322:0:1:Golden Apple:15000:1:https//www.digminecraft.com/food_recipes/images/golden_apple.png"
     - "396:0:1:Golden Carrot:10000:1:https//www.digminecraft.com/food_recipes/images/golden_carrot.png"
   masks:
-    - "397:0:1:Dragon Head:10000:1:https//img4.hostingpics.net/pics/436796skulldragon.png"
-    - "397:0:1:Wither Skeleton Skull:5000:1:https//img4.hostingpics.net/pics/826437skullwither.png"
-    - "397:0:4:Creeper Head:2000:1:https//img4.hostingpics.net/pics/556676skullcreeper.png"
-    - "397:0:2:Zombie Head:1000:1:https//img4.hostingpics.net/pics/415562skullzombie.png"
-    - "307:0:3:Skeleton Head:1000:1:https//img4.hostingpics.net/pics/589367skullskeleton.png"
+    - "397:0:1:Dragon Head:10000000:1:https//img4.hostingpics.net/pics/436796skulldragon.png"
+    - "397:0:1:Wither Skeleton Skull:500000:1:https//img4.hostingpics.net/pics/826437skullwither.png"
+    - "397:0:4:Creeper Head:2000000:1:https//img4.hostingpics.net/pics/556676skullcreeper.png"
+    - "397:0:2:Zombie Head:1000000:1:https//img4.hostingpics.net/pics/415562skullzombie.png"
+    - "307:0:3:Skeleton Head:100000:1:https//img4.hostingpics.net/pics/589367skullskeleton.png"
