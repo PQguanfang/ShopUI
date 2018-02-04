@@ -6,4 +6,4 @@ author: QuiverlyRivalry
 
 commands:
  shopui:
-  description: "Access the UI for Shops!"
+  description: "打开商店UI"
