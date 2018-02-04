@@ -28,7 +28,7 @@ class QuiverlyRivalry extends PluginBase
             $plugin = $this->getServer()->getPluginManager()->getPlugin($depend);
             $name = strtolower($depend);
             if (is_null($plugin)) {
-                $this->getLogger()->error($depend . " is required to use this plugin.");
+                $this->getLogger()->error($depend . "不存在，请先安装这个插件。");
                 $this->setEnabled(false);
                 return false;
             }
@@ -38,7 +38,7 @@ class QuiverlyRivalry extends PluginBase
         foreach (["weapons", "tools", "armor", "blocks", "specials", "masks"] as $category) {
             $this->$category = $this->getConfig()->getNested("items." . $category);
         }
-        $this->getLogger()->info("ShopUI by Quiverly and a pig! Remember I am a developer for hire!");
+        $this->getLogger()->info("ShopUI汉化版本加载成功，汉化者：YuIo_PQ!");
     }
 
     public function onCommand(CommandSender $sender, Command $cmd, string $label, array $args): bool
@@ -49,7 +49,7 @@ class QuiverlyRivalry extends PluginBase
                     $this->mainForm($sender);
                     return true;
                 }
-                $sender->sendMessage(TextFormat::RED . "Please use this in-game.");
+                $sender->sendMessage(TextFormat::RED . "请在游戏中使用这个命令。");
                 break;
         }
         return true;
@@ -75,13 +75,13 @@ class QuiverlyRivalry extends PluginBase
         $form->setTitle(TextFormat::WHITE . "--= " . TextFormat::BOLD . TextFormat::GREEN . $this->getConfig()->getNested("name") . TextFormat::RESET . TextFormat::WHITE . " =--");
         $money = $this->economyapi->myMoney($player->getName());
         $form->setContent("Your Money: $" . $money);
-        $form->addButton(TextFormat::WHITE . "Weapons");
-        $form->addButton(TextFormat::WHITE . "Tools");
-        $form->addButton(TextFormat::WHITE . "Armour");
-        $form->addButton(TextFormat::WHITE . "Blocks");
-        $form->addButton(TextFormat::WHITE . "Special Items");
-        $form->addButton(TextFormat::WHITE . "Masks");
-        $form->addButton(TextFormat::GREEN . "Exit");
+        $form->addButton(TextFormat::WHITE . "武器");
+        $form->addButton(TextFormat::WHITE . "工具");
+        $form->addButton(TextFormat::WHITE . "装备");
+        $form->addButton(TextFormat::WHITE . "方块");
+        $form->addButton(TextFormat::WHITE . "特殊物品");
+        $form->addButton(TextFormat::WHITE . "面具");
+        $form->addButton(TextFormat::GREEN . "退出");
         $form->sendToPlayer($player);
     }
 
