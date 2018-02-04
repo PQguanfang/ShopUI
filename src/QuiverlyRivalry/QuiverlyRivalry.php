@@ -125,12 +125,12 @@ class QuiverlyRivalry extends PluginBase
         });
         $form->setTitle(ucfirst($category));
         $money = $this->economyapi->myMoney($player->getName());
-        $form->setContent("Your Money: " . $money);
+        $form->setContent("剩余金币：" . $money);
         foreach ($this->$category as $item) {
             $values = explode(":", $item);
             $form->addButton($values[3] . " : " . $values[4], isset($values[5]) ? $values[5] : -1, isset($values[6]) ? str_replace("https//", "https://", $values[6]) : "");
         }
-        $form->addButton("Back, to main menu!");
+        $form->addButton("返回到主菜单");
         $form->sendToPlayer($player);
     }
 
