@@ -4,9 +4,9 @@ name: §bxxx服务器商店
 # 消息
 # 变量: {amount}, {item}, {cost}, {missing}
 messages:
-  #Message sent when you buy an item
-  bought: "You have bought {amount} {item} for ${cost}"
-  not-enough-money: "You do not have enough money to buy {amount} {item}. You are missing ${missing}."
+  #当你购买物品时候，服务器发送的消息
+  bought: "你成功花费了{cost}来购买{amount}件{item}！"
+  not-enough-money: "你没有足够的钱来买{amount}件{item}，你还需要{missing}金币！"
 
 # 商店里面出售的东西
 items:
