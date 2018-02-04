@@ -10,7 +10,7 @@ messages:
 
 # 商店里面出售的东西
 items:
-  # Format for items is id:meta:amount:name:price:imgtype:imgpath (Note: imgtype and imgpath are optional. 0 is path, 1 is url)
+  # 正确的配置格式是物品ID:物品附属ID:数量:自定义名字:价格:图标显示方式:图标显示变量 (注意：图标显示方式仅两种，填写0是读取本地客户端中自带的图标（非服务器自带，是客户端），1是图片URL形式（16x16）)
   # For URLs, remove the : to prevent issues, the plugin will add it on its own.
   weapons:
     - "268:0:1:Wooden Sword:2500:0:textures/items/wood_sword"
